@@ -56,9 +56,6 @@ Captured when a visitor clicks a navigation link in the header.
 - `link_href` — anchor target, e.g. "#how".
 - `location` — `nav_desktop` or `nav_mobile`.
 
-### `nav_login_clicked`
-Captured when the "Log in" link in the desktop nav is clicked.
-
 ### `cta_clicked`
 Captured when a "Request invite" button that is **not** part of a form is clicked (e.g. desktop/mobile nav CTA that scrolls to `#signup`).
 

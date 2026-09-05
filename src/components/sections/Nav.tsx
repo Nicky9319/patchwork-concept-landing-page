@@ -44,13 +44,6 @@ export function Nav() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <a
-            href="#login"
-            className="font-mono text-[11px] uppercase tracking-widish text-muted hover:text-foreground"
-            onClick={() => captureEvent("nav_login_clicked")}
-          >
-            Log in
-          </a>
           <Button asChild size="sm" onClick={trackCTA("nav_desktop")}>
             <a href="#signup">Request invite</a>
           </Button>
