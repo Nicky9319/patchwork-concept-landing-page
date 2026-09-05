@@ -1,0 +1,7 @@
+[     413ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-YYOJCKCD.js?v=2d48df8b:21550
+[     450ms] [LOG] [analytics] capturing page_viewed {page_title: Patchwork — Every release deserves a release reel.} @ http://127.0.0.1:5173/src/lib/analytics.ts?t=1788612115933:73
+[   55660ms] [LOG] [analytics] capturing nav_link_clicked {link_label: How it works, link_href: #how, location: nav_desktop} @ https://us-assets.i.posthog.com/static/1.427.0/posthog-recorder.js:0
+[   58164ms] [LOG] [analytics] capturing outputs_tab_changed {tab_name: changelog} @ https://us-assets.i.posthog.com/static/1.427.0/posthog-recorder.js:0
+[   60770ms] [LOG] [analytics] capturing request_invite_submitted {location: hero, email: test@example.com} @ https://us-assets.i.posthog.com/static/1.427.0/posthog-recorder.js:0
+[   71870ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-YYOJCKCD.js?v=2d48df8b:21550
+[  121207ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-YYOJCKCD.js?v=2d48df8b:21550

@@ -1,4 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { captureEvent } from "@/lib/analytics";
 import { Video, FileText, Twitter, BookOpen, Mail } from "lucide-react";
 
 export function Outputs() {
@@ -27,7 +28,11 @@ export function Outputs() {
           </div>
         </div>
 
-        <Tabs defaultValue="video" className="w-full">
+        <Tabs
+          defaultValue="video"
+          className="w-full"
+          onValueChange={(value) => captureEvent("outputs_tab_changed", { tab_name: value })}
+        >
           <TabsList className="flex-wrap h-auto">
             <TabsTrigger value="video">
               <Video size={12} />

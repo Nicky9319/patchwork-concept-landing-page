@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { captureEvent } from "@/lib/analytics";
 import { FrameCounter } from "@/components/brand/FrameCounter";
 import { FilmStrip } from "@/components/brand/FilmStrip";
 
@@ -14,6 +15,12 @@ export function Signup() {
     e.preventDefault();
     if (!email || status === "submitting") return;
     setStatus("submitting");
+
+    captureEvent("request_invite_submitted", {
+      location: "signup",
+      email: email.trim().toLowerCase(),
+    });
+
     setTimeout(() => {
       setStatus("success");
       setEmail("");

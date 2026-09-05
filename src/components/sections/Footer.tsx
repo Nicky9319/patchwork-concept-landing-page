@@ -1,8 +1,8 @@
-import { Logo } from "@/components/brand/Logo";
 import { FilmStrip } from "@/components/brand/FilmStrip";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
+import { captureEvent } from "@/lib/analytics";
 import { ArrowRight, Mail, Check } from "lucide-react";
 import { useState } from "react";
 
@@ -29,10 +29,20 @@ export function Footer() {
     e.preventDefault();
     if (!email || status === "submitting") return;
     setStatus("submitting");
+
+    captureEvent("newsletter_subscribed", {
+      location: "footer",
+      email: email.trim().toLowerCase(),
+    });
+
     setTimeout(() => {
       setStatus("success");
       setEmail("");
     }, 900);
+  };
+
+  const trackFooterLink = (link: string, column: string) => () => {
+    captureEvent("footer_link_clicked", { link_label: link, column });
   };
 
   return (
@@ -42,8 +52,7 @@ export function Footer() {
       <div className="container py-16">
         <div className="grid lg:grid-cols-12 gap-10 mb-12">
           <div className="lg:col-span-5">
-            <Logo size="md" />
-            <p className="mt-6 max-w-sm text-muted leading-relaxed text-pretty">
+            <p className="max-w-sm text-muted leading-relaxed text-pretty">
               Patchwork turns every release into a story worth telling. Built
               for teams who ship.
             </p>
@@ -122,6 +131,7 @@ export function Footer() {
                       <a
                         href="#"
                         className="font-sans text-sm text-muted hover:text-accent transition-colors"
+                        onClick={trackFooterLink(l, c.title)}
                       >
                         {l}
                       </a>
@@ -138,15 +148,16 @@ export function Footer() {
             © 2026 Patchwork Labs · Made for people who ship
           </div>
           <div className="flex items-center gap-6 font-mono text-[11px] uppercase tracking-widish text-muted">
-            <a href="#" className="hover:text-foreground">
-              Privacy
-            </a>
-            <a href="#" className="hover:text-foreground">
-              Terms
-            </a>
-            <a href="#" className="hover:text-foreground">
-              Security
-            </a>
+            {["Privacy", "Terms", "Security"].map((l) => (
+              <a
+                key={l}
+                href="#"
+                className="hover:text-foreground"
+                onClick={trackFooterLink(l, "Legal")}
+              >
+                {l}
+              </a>
+            ))}
           </div>
         </div>
       </div>

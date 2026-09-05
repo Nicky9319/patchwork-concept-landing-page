@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { VideoModal } from "@/components/ui/video-modal";
 import { FrameCounter } from "@/components/brand/FrameCounter";
 import { FilmStrip } from "@/components/brand/FilmStrip";
+import { captureEvent } from "@/lib/analytics";
 
 export function Hero() {
   const [videoOpen, setVideoOpen] = useState(false);
@@ -16,11 +17,22 @@ export function Hero() {
     e.preventDefault();
     if (!email || status === "submitting") return;
     setStatus("submitting");
+
+    captureEvent("request_invite_submitted", {
+      location: "hero",
+      email: email.trim().toLowerCase(),
+    });
+
     // Simulate async submission. Replace this with your real API call.
     setTimeout(() => {
       setStatus("success");
       setEmail("");
     }, 900);
+  };
+
+  const openVideo = () => {
+    setVideoOpen(true);
+    captureEvent("video_opened", { location: "hero_player" });
   };
 
   return (
@@ -152,7 +164,7 @@ export function Hero() {
 
         {/* Hero player mockup */}
         <div className="mt-20 md:mt-28 reveal reveal-6">
-          <HeroPlayer onOpenVideo={() => setVideoOpen(true)} />
+          <HeroPlayer onOpenVideo={openVideo} />
         </div>
       </div>
 

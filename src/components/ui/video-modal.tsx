@@ -10,6 +10,7 @@ import {
   RotateCcw,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { captureEvent } from "@/lib/analytics";
 
 type Chapter = {
   label: string;
@@ -97,7 +98,7 @@ export function VideoModal({
       switch (e.key) {
         case "Escape":
           e.preventDefault();
-          onOpenChange(false);
+          closeModal();
           break;
         case " ":
         case "k":
@@ -145,26 +146,39 @@ export function VideoModal({
     return () => document.removeEventListener("fullscreenchange", onChange);
   }, []);
 
+  const trackVideo = (event: string, props: Record<string, string | number | boolean | undefined> = {}) => {
+    captureEvent(event, { video_title: title, duration, ...props });
+  };
+
+  const closeModal = () => {
+    onOpenChange(false);
+    trackVideo("video_closed", { current_time: currentTime });
+  };
+
   const togglePlay = React.useCallback(() => {
     const v = videoRef.current;
     if (!v) return;
     if (v.paused) {
       v.play();
       setHasStarted(true);
+      trackVideo("video_played", { current_time: v.currentTime });
     } else {
       v.pause();
+      trackVideo("video_paused", { current_time: v.currentTime });
     }
-  }, []);
+  }, [title, duration]);
 
   const toggleFullscreen = React.useCallback(() => {
     const el = containerRef.current;
     if (!el) return;
-    if (!document.fullscreenElement) {
+    const entering = !document.fullscreenElement;
+    if (entering) {
       el.requestFullscreen?.().catch(() => {});
     } else {
       document.exitFullscreen?.().catch(() => {});
     }
-  }, []);
+    trackVideo("video_fullscreen_toggled", { state: entering ? "entered" : "exited" });
+  }, [title, duration]);
 
   const seekTo = (seconds: number) => {
     const v = videoRef.current;
@@ -216,7 +230,7 @@ export function VideoModal({
         >
           {/* Backdrop */}
           <div
-            onClick={() => onOpenChange(false)}
+            onClick={closeModal}
             className="absolute inset-0 bg-foreground/40 backdrop-blur-md"
             aria-hidden
           />
@@ -245,7 +259,7 @@ export function VideoModal({
                 </p>
               </div>
               <button
-                onClick={() => onOpenChange(false)}
+                onClick={closeModal}
                 className="group flex items-center gap-2 border border-border bg-white hover:border-accent hover:text-accent text-muted px-4 py-2 font-mono text-[10px] uppercase tracking-widish transition-colors shadow-sm"
                 aria-label="Close video"
               >
@@ -294,7 +308,10 @@ export function VideoModal({
                   }}
                   onPlay={() => setIsPlaying(true)}
                   onPause={() => setIsPlaying(false)}
-                  onEnded={() => setIsPlaying(false)}
+                  onEnded={() => {
+                    setIsPlaying(false);
+                    trackVideo("video_finished", { duration });
+                  }}
                 />
 
                 {/* Center play button overlay — visible only before play */}
@@ -336,7 +353,13 @@ export function VideoModal({
                   {chapters.map((c, i) => (
                     <button
                       key={c.label}
-                      onClick={() => seekTo(c.at)}
+                      onClick={() => {
+                        seekTo(c.at);
+                        trackVideo("video_chapter_clicked", {
+                          chapter_label: c.label,
+                          chapter_time: c.at,
+                        });
+                      }}
                       className={cn(
                         "flex items-center gap-1.5 px-1.5 py-1 hover:text-accent transition-colors",
                         i === activeChapterIdx && "text-accent"
@@ -363,6 +386,13 @@ export function VideoModal({
                   ref={scrubberRef}
                   onPointerDown={onScrubberPointerDown}
                   onPointerMove={onScrubberPointerMove}
+                  onPointerUp={(e) => {
+                    const el = scrubberRef.current;
+                    if (el && el.hasPointerCapture(e.pointerId)) {
+                      el.releasePointerCapture(e.pointerId);
+                    }
+                    trackVideo("video_seeked", { to_time: currentTime });
+                  }}
                   className="relative h-1.5 w-full cursor-pointer group bg-border"
                 >
                   {/* Hover/buffer track */}

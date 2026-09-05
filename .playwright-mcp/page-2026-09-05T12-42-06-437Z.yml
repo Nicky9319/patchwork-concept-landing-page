@@ -1,0 +1,604 @@
+- generic [ref=f11e3]:
+  - banner [ref=f11e4]:
+    - generic [ref=f11e5]:
+      - navigation [ref=f11e6]:
+        - link "How it works" [ref=f11e7] [cursor=pointer]:
+          - /url: "#how"
+        - link "The reel" [ref=f11e8] [cursor=pointer]:
+          - /url: "#reel"
+        - link "Pipeline" [ref=f11e9] [cursor=pointer]:
+          - /url: "#pipeline"
+        - link "Use cases" [ref=f11e10] [cursor=pointer]:
+          - /url: "#audience"
+      - generic [ref=f11e11]:
+        - link "Log in" [ref=f11e12] [cursor=pointer]:
+          - /url: "#login"
+        - link "Request invite" [ref=f11e13] [cursor=pointer]:
+          - /url: "#signup"
+  - generic [ref=f11e16]:
+    - generic [ref=f11e17]:
+      - generic [ref=f11e18]: "Now showing: v2.4.0 release reel"
+      - generic [ref=f11e19]: ✦
+    - generic [ref=f11e20]:
+      - generic [ref=f11e21]: 412 teams on the waitlist
+      - generic [ref=f11e22]: ✦
+    - generic [ref=f11e23]:
+      - generic [ref=f11e24]: "average render time: 87 seconds"
+      - generic [ref=f11e25]: ✦
+    - generic [ref=f11e26]:
+      - generic [ref=f11e27]: 5 outputs per release
+      - generic [ref=f11e28]: ✦
+    - generic [ref=f11e29]:
+      - generic [ref=f11e30]: automatic breaking-change detection
+      - generic [ref=f11e31]: ✦
+    - generic [ref=f11e32]:
+      - generic [ref=f11e33]: "now playing: stream cancellation fix"
+      - generic [ref=f11e34]: ✦
+    - generic [ref=f11e35]:
+      - generic [ref=f11e36]: "Now showing: v2.4.0 release reel"
+      - generic [ref=f11e37]: ✦
+    - generic [ref=f11e38]:
+      - generic [ref=f11e39]: 412 teams on the waitlist
+      - generic [ref=f11e40]: ✦
+    - generic [ref=f11e41]:
+      - generic [ref=f11e42]: "average render time: 87 seconds"
+      - generic [ref=f11e43]: ✦
+    - generic [ref=f11e44]:
+      - generic [ref=f11e45]: 5 outputs per release
+      - generic [ref=f11e46]: ✦
+    - generic [ref=f11e47]:
+      - generic [ref=f11e48]: automatic breaking-change detection
+      - generic [ref=f11e49]: ✦
+    - generic [ref=f11e50]:
+      - generic [ref=f11e51]: "now playing: stream cancellation fix"
+      - generic [ref=f11e52]: ✦
+    - generic [ref=f11e53]:
+      - generic [ref=f11e54]: "Now showing: v2.4.0 release reel"
+      - generic [ref=f11e55]: ✦
+    - generic [ref=f11e56]:
+      - generic [ref=f11e57]: 412 teams on the waitlist
+      - generic [ref=f11e58]: ✦
+    - generic [ref=f11e59]:
+      - generic [ref=f11e60]: "average render time: 87 seconds"
+      - generic [ref=f11e61]: ✦
+    - generic [ref=f11e62]:
+      - generic [ref=f11e63]: 5 outputs per release
+      - generic [ref=f11e64]: ✦
+    - generic [ref=f11e65]:
+      - generic [ref=f11e66]: automatic breaking-change detection
+      - generic [ref=f11e67]: ✦
+    - generic [ref=f11e68]:
+      - generic [ref=f11e69]: "now playing: stream cancellation fix"
+      - generic [ref=f11e70]: ✦
+    - generic [ref=f11e71]:
+      - generic [ref=f11e72]: "Now showing: v2.4.0 release reel"
+      - generic [ref=f11e73]: ✦
+    - generic [ref=f11e74]:
+      - generic [ref=f11e75]: 412 teams on the waitlist
+      - generic [ref=f11e76]: ✦
+    - generic [ref=f11e77]:
+      - generic [ref=f11e78]: "average render time: 87 seconds"
+      - generic [ref=f11e79]: ✦
+    - generic [ref=f11e80]:
+      - generic [ref=f11e81]: 5 outputs per release
+      - generic [ref=f11e82]: ✦
+    - generic [ref=f11e83]:
+      - generic [ref=f11e84]: automatic breaking-change detection
+      - generic [ref=f11e85]: ✦
+    - generic [ref=f11e86]:
+      - generic [ref=f11e87]: "now playing: stream cancellation fix"
+      - generic [ref=f11e88]: ✦
+  - main [ref=f11e89]:
+    - generic [ref=f11e90]:
+      - img [ref=f11e92]:
+        - generic [ref=f11e94]: "01"
+        - generic [ref=f11e101]: "02"
+        - generic [ref=f11e108]: "03"
+        - generic [ref=f11e115]: "04"
+        - generic [ref=f11e122]: "05"
+        - generic [ref=f11e129]: "06"
+        - generic [ref=f11e136]: "07"
+        - generic [ref=f11e143]: "08"
+        - generic [ref=f11e150]: "09"
+        - generic [ref=f11e157]: "10"
+        - generic [ref=f11e164]: "11"
+        - generic [ref=f11e171]: "12"
+      - img [ref=f11e179]:
+        - generic [ref=f11e181]: "01"
+        - generic [ref=f11e188]: "02"
+        - generic [ref=f11e195]: "03"
+        - generic [ref=f11e202]: "04"
+        - generic [ref=f11e209]: "05"
+        - generic [ref=f11e216]: "06"
+        - generic [ref=f11e223]: "07"
+        - generic [ref=f11e230]: "08"
+        - generic [ref=f11e237]: "09"
+        - generic [ref=f11e244]: "10"
+        - generic [ref=f11e251]: "11"
+        - generic [ref=f11e258]: "12"
+        - generic [ref=f11e265]: "13"
+        - generic [ref=f11e272]: "14"
+      - generic [ref=f11e279]:
+        - generic [ref=f11e280]:
+          - generic [ref=f11e281]: Reel 024 · Now recording · 2026.06
+          - generic [ref=f11e284]:
+            - generic [ref=f11e285]: TC
+            - generic [ref=f11e286]: 00:00:01:12
+        - generic [ref=f11e287]:
+          - generic [ref=f11e288]: Private beta · Invite only
+          - heading [level=1] [ref=f11e292]:
+            - text: Every release deserves a
+            - generic [ref=f11e293]: release reel
+            - text: .
+          - paragraph [ref=f11e296]: Patchwork hooks into your CI/CD and turns every merged PR into a release reel — changelogs, breaking-change walkthroughs, migration guides, and short-form clips — generated while you ship, not six weeks after.
+          - generic [ref=f11e297]:
+            - generic [ref=f11e298]:
+              - generic [ref=f11e299]: Email
+              - textbox "Email" [ref=f11e300]:
+                - /placeholder: founder@yourcompany.dev
+            - button "Request invite" [ref=f11e301] [cursor=pointer]
+          - paragraph [ref=f11e302]: 412 teams on the waitlist. ~3 day turnaround. No credit card.
+        - generic [ref=f11e304]:
+          - generic [ref=f11e305]: FEATURED REEL
+          - generic [ref=f11e307]: PATCHWORK · AUTO-GENERATED
+          - generic [ref=f11e309]:
+            - generic [ref=f11e310]:
+              - generic [ref=f11e311]: patchwork-promo.mp4 · 1280×720 · 30fps
+              - generic [ref=f11e317]:
+                - generic [ref=f11e318]: AUTO-GENERATED
+                - generic [ref=f11e319]: 00:32 / 00:32
+            - generic [ref=f11e320]:
+              - button "Open release reel video player" [ref=f11e321] [cursor=pointer]:
+                - generic "Patchwork release reel — auto-generated explainer" [ref=f11e322]
+                - generic [ref=f11e323]: REC · LIVE
+                - generic [ref=f11e325]: Expand
+              - generic [ref=f11e335]:
+                - generic [ref=f11e336]:
+                  - generic [ref=f11e337]: Generated artifacts
+                  - list [ref=f11e338]:
+                    - listitem [ref=f11e339] [cursor=pointer]:
+                      - generic [ref=f11e340]: MP4
+                      - generic [ref=f11e341]: release-reel-v2.4.0
+                      - generic [ref=f11e342]: 18.4 MB
+                    - listitem [ref=f11e343] [cursor=pointer]:
+                      - generic [ref=f11e344]: MD
+                      - generic [ref=f11e345]: CHANGELOG
+                      - generic [ref=f11e346]: 4.2 KB
+                    - listitem [ref=f11e347] [cursor=pointer]:
+                      - generic [ref=f11e348]: MD
+                      - generic [ref=f11e349]: MIGRATION.md
+                      - generic [ref=f11e350]: 2.1 KB
+                    - listitem [ref=f11e351] [cursor=pointer]:
+                      - generic [ref=f11e352]: JSON
+                      - generic [ref=f11e353]: social-clips
+                      - generic [ref=f11e354]: 9 items
+                    - listitem [ref=f11e355] [cursor=pointer]:
+                      - generic [ref=f11e356]: MDX
+                      - generic [ref=f11e357]: blog-post.mdx
+                      - generic [ref=f11e358]: 1.8 KB
+                - generic [ref=f11e359]:
+                  - generic [ref=f11e360]: PRs in this reel
+                  - generic [ref=f11e361]:
+                    - generic [ref=f11e362]:
+                      - generic [ref=f11e366]: "#1842"
+                      - generic [ref=f11e367]: auth v2 migration
+                      - generic [ref=f11e368]: BREAKING
+                    - generic [ref=f11e369]:
+                      - generic [ref=f11e373]: "#1841"
+                      - generic [ref=f11e374]: add retry middleware
+                      - generic [ref=f11e375]: FEAT
+                    - generic [ref=f11e376]:
+                      - generic [ref=f11e380]: "#1839"
+                      - generic [ref=f11e381]: fix stream cancellation
+                      - generic [ref=f11e382]: FIX
+          - img [ref=f11e384]:
+            - generic [ref=f11e386]: "01"
+            - generic [ref=f11e393]: "02"
+            - generic [ref=f11e400]: "03"
+            - generic [ref=f11e407]: "04"
+            - generic [ref=f11e414]: "05"
+            - generic [ref=f11e421]: "06"
+            - generic [ref=f11e428]: "07"
+            - generic [ref=f11e435]: "08"
+            - generic [ref=f11e442]: "09"
+            - generic [ref=f11e449]: "10"
+            - generic [ref=f11e456]: "11"
+            - generic [ref=f11e463]: "12"
+            - generic [ref=f11e470]: "13"
+            - generic [ref=f11e477]: "14"
+            - generic [ref=f11e484]: "15"
+            - generic [ref=f11e491]: "16"
+            - generic [ref=f11e498]: "17"
+            - generic [ref=f11e505]: "18"
+            - generic [ref=f11e512]: "19"
+            - generic [ref=f11e519]: "20"
+    - generic [ref=f11e528]:
+      - generic [ref=f11e529]:
+        - generic [ref=f11e530]: · The problem
+        - heading "You ship on Tuesday. Your users find out on Friday." [level=2] [ref=f11e531]: You ship on Tuesday.Your users find out on Friday.
+        - paragraph [ref=f11e532]: Every release is a story. Most of them go untold — because telling them takes a writer, a video editor, a social manager, and three days you don't have.
+      - generic [ref=f11e534]:
+        - generic [ref=f11e535]:
+          - generic [ref=f11e536]: Today
+          - generic [ref=f11e537]:
+            - generic [ref=f11e538]:
+              - generic [ref=f11e539]: Tue
+              - generic [ref=f11e543]:
+                - generic [ref=f11e544]: Ship v2.4.0
+                - generic [ref=f11e545]: 3 breaking changes, 12 new features
+            - generic [ref=f11e546]:
+              - generic [ref=f11e547]: Fri
+              - generic [ref=f11e551]:
+                - generic [ref=f11e552]: Update CHANGELOG.md
+                - generic [ref=f11e553]: if anyone remembers
+            - generic [ref=f11e554]:
+              - generic [ref=f11e555]: Mon+
+              - generic [ref=f11e559]:
+                - generic [ref=f11e560]: Record walkthrough video
+                - generic [ref=f11e561]: UI has already changed twice
+            - generic [ref=f11e562]:
+              - generic [ref=f11e563]: "???"
+              - generic [ref=f11e567]:
+                - generic [ref=f11e568]: Post to social
+                - generic [ref=f11e569]: doesn't happen
+        - generic [ref=f11e570]:
+          - generic [ref=f11e571]: With Patchwork
+          - generic [ref=f11e572]:
+            - generic [ref=f11e573]:
+              - generic [ref=f11e574]: Tue
+              - generic [ref=f11e579]:
+                - generic [ref=f11e580]: Ship v2.4.0
+                - generic [ref=f11e581]: Patchwork watches the merge
+            - generic [ref=f11e582]:
+              - generic [ref=f11e583]: Tue
+              - generic [ref=f11e588]:
+                - generic [ref=f11e589]: Release reel generated
+                - generic [ref=f11e590]: CHANGELOG, video, social clips, migration guide
+            - generic [ref=f11e591]:
+              - generic [ref=f11e592]: Tue
+              - generic [ref=f11e597]:
+                - generic [ref=f11e598]: Published to all channels
+                - generic [ref=f11e599]: ready for review in < 90 seconds
+            - generic [ref=f11e600]:
+              - generic [ref=f11e601]: Tue
+              - generic [ref=f11e606]:
+                - generic [ref=f11e607]: Users know what's new
+                - generic [ref=f11e608]: while the change is still fresh
+    - generic [ref=f11e610]:
+      - generic [ref=f11e611]:
+        - generic [ref=f11e612]: · How it works
+        - heading "Three stages. Zero writing." [level=2] [ref=f11e613]
+        - paragraph [ref=f11e614]: Patchwork runs in your release pipeline — the same place you already run tests and build artifacts. Just one more stage that produces the story instead of the binary.
+      - generic [ref=f11e615]:
+        - generic [ref=f11e617]:
+          - generic [ref=f11e618]: "01"
+          - generic [ref=f11e622]:
+            - heading "Connect One-line install." [level=3] [ref=f11e623]:
+              - text: Connect
+              - generic [ref=f11e624]: One-line install.
+            - paragraph [ref=f11e625]: Drop the Patchwork GitHub App into your org. We hook into your existing CI/CD — GitHub Actions, GitLab CI, CircleCI, Vercel, anything that ships a release.
+          - generic [ref=f11e627]:
+            - generic [ref=f11e628]: terminal
+            - generic [ref=f11e634]: npm i @patchwork/cli patchwork init --repo=acme/api
+        - generic [ref=f11e639]:
+          - generic [ref=f11e640]: "02"
+          - generic [ref=f11e649]:
+            - heading "Detect We read the diffs." [level=3] [ref=f11e650]:
+              - text: Detect
+              - generic [ref=f11e651]: We read the diffs.
+            - paragraph [ref=f11e652]: Patchwork watches every merged PR, semver bump, deprecation flag, and schema change. It classifies them — breaking, feat, fix — using your conventions and conventional commits.
+          - generic [ref=f11e654]:
+            - generic [ref=f11e655]: patchwork.log
+            - generic [ref=f11e661]: "→ parsing 14 commits → 2 BREAKING detected → semver: 2.3.4 → 3.0.0 → deprecations: 1"
+        - generic [ref=f11e666]:
+          - generic [ref=f11e667]: "03"
+          - generic [ref=f11e671]:
+            - heading "Render Story, cut, and shipped." [level=3] [ref=f11e672]:
+              - text: Render
+              - generic [ref=f11e673]: Story, cut, and shipped.
+            - paragraph [ref=f11e674]: Patchwork writes the changelog, drafts the social thread, scripts the video, renders the walkthrough, and queues everything for your review — usually before the CI badge goes green.
+          - generic [ref=f11e676]:
+            - generic [ref=f11e677]: release.log
+            - generic [ref=f11e683]: → release-reel.mp4 ✓ → CHANGELOG.md ✓ → 9 social clips ✓ → migration.md ✓ ready for review
+    - generic [ref=f11e685]:
+      - generic [ref=f11e686]:
+        - generic [ref=f11e687]:
+          - generic [ref=f11e688]: · The reel
+          - heading "One release. Five outputs." [level=2] [ref=f11e689]
+        - paragraph [ref=f11e691]: Same source — your merged PRs. Patchwork formats the story for every surface it lives on. You review, not write.
+      - generic [ref=f11e692]:
+        - tablist [ref=f11e693]:
+          - tab "Release reel" [selected] [ref=f11e694] [cursor=pointer]
+          - tab "Changelog" [ref=f11e698] [cursor=pointer]
+          - tab "Social thread" [ref=f11e702] [cursor=pointer]
+          - tab "Migration guide" [ref=f11e705] [cursor=pointer]
+          - tab "Newsletter" [ref=f11e708] [cursor=pointer]
+        - tabpanel "Release reel" [ref=f11e712]:
+          - generic [ref=f11e713]:
+            - generic [ref=f11e716]:
+              - generic [ref=f11e717]:
+                - generic [ref=f11e718]: Scene 01 · Title
+                - generic [ref=f11e719]: v2.4.0 — auth, reimagined
+                - generic [ref=f11e720]: generated in 87s · 14 PRs · 2 breaking changes
+              - generic [ref=f11e721]:
+                - generic [ref=f11e722]:
+                  - generic [ref=f11e723]: RUNTIME 04:38
+                  - generic [ref=f11e724]: ASPECT 16:9
+                  - generic [ref=f11e725]: VOICE NARRATED
+                - generic [ref=f11e726]:
+                  - generic [ref=f11e727]: A Patchwork production
+                  - generic [ref=f11e728]: The Reel ↘
+            - generic [ref=f11e729]:
+              - generic [ref=f11e730]: Production notes
+              - generic [ref=f11e731]:
+                - paragraph [ref=f11e732]: ▸ Script drafted from PR descriptions and diffs
+                - paragraph [ref=f11e733]: ▸ Voiceover narrated in plain English, not changelog-speak
+                - paragraph [ref=f11e734]: ▸ Visuals auto-generated from your UI (Playwright captures)
+                - paragraph [ref=f11e735]: ▸ Captions burned in (vertical + horizontal variants)
+              - generic [ref=f11e736]:
+                - generic [ref=f11e737]:
+                  - generic [ref=f11e738]: 16:9 master
+                  - generic [ref=f11e739]: release-reel.mp4
+                - generic [ref=f11e740]:
+                  - generic [ref=f11e741]: 9:16 vertical
+                  - generic [ref=f11e742]: reel-tiktok.mp4
+                - generic [ref=f11e743]:
+                  - generic [ref=f11e744]: 1:1 square
+                  - generic [ref=f11e745]: reel-square.mp4
+                - generic [ref=f11e746]:
+                  - generic [ref=f11e747]: SRT captions
+                  - generic [ref=f11e748]: reel.srt
+    - generic [ref=f11e750]:
+      - generic [ref=f11e751]:
+        - generic [ref=f11e752]:
+          - generic [ref=f11e753]: · Pipeline
+          - heading "Drop-in stage. Zero infra." [level=2] [ref=f11e754]
+        - paragraph [ref=f11e756]: Patchwork lives between your tests and your release. Your CI doesn't change — you just get a richer artifact at the end of the run.
+      - generic [ref=f11e757]:
+        - generic [ref=f11e758]:
+          - generic [ref=f11e759]: .github/workflows/release.yml
+          - generic [ref=f11e765]: "◉ run #4,218"
+        - generic [ref=f11e766]:
+          - generic [ref=f11e767]:
+            - generic [ref=f11e768]:
+              - generic [ref=f11e769]: CI Stages
+              - generic [ref=f11e770]:
+                - generic [ref=f11e772]: "01"
+                - generic [ref=f11e775]:
+                  - generic [ref=f11e776]: commit
+                  - generic [ref=f11e777]: "feat(auth): v2 schema"
+              - generic [ref=f11e780]:
+                - generic [ref=f11e782]: "02"
+                - generic [ref=f11e787]:
+                  - generic [ref=f11e788]: build
+                  - generic [ref=f11e789]: compiled in 42s
+              - generic [ref=f11e792]:
+                - generic [ref=f11e794]: "03"
+                - generic [ref=f11e798]:
+                  - generic [ref=f11e799]: test
+                  - generic [ref=f11e800]: 248 passing
+            - generic [ref=f11e804]:
+              - generic [ref=f11e805]: ✦ Patchwork ✦
+              - generic [ref=f11e808]: render
+              - generic [ref=f11e809]: 87s · 14 PRs
+            - generic [ref=f11e811]:
+              - generic [ref=f11e812]:
+                - generic [ref=f11e813]: Release artifacts
+                - generic [ref=f11e814]: uploaded
+              - generic [ref=f11e815]:
+                - generic [ref=f11e819]: release-reel.mp4
+                - generic [ref=f11e820]: 18.4 MB
+              - generic [ref=f11e821]:
+                - generic [ref=f11e825]: CHANGELOG.md
+                - generic [ref=f11e826]: ready
+              - generic [ref=f11e827]:
+                - generic [ref=f11e831]: MIGRATION.md
+                - generic [ref=f11e832]: ready
+              - generic [ref=f11e833]:
+                - generic [ref=f11e837]: social-clips.json
+                - generic [ref=f11e838]: 9 items
+          - generic [ref=f11e839]:
+            - generic [ref=f11e840]:
+              - generic [ref=f11e841]: Pipeline duration
+              - generic [ref=f11e842]: 4m 12s
+              - generic [ref=f11e843]: +87s
+            - generic [ref=f11e844]:
+              - generic [ref=f11e845]: Artifacts produced
+              - generic [ref=f11e846]: "14"
+              - generic [ref=f11e847]: vs 0 before
+            - generic [ref=f11e848]:
+              - generic [ref=f11e849]: Manual work
+              - generic [ref=f11e850]: 0 min
+              - generic [ref=f11e851]: vs ~6h before
+      - generic [ref=f11e852]:
+        - generic [ref=f11e853]:
+          - generic [ref=f11e854]:
+            - generic [ref=f11e855]:
+              - generic [ref=f11e856]: release.yml
+              - generic [ref=f11e857]: ·
+              - generic [ref=f11e858]: patch v1
+            - generic [ref=f11e859]: yaml
+          - generic [ref=f11e860]: "name: release on: push: branches: [main] jobs: ship: runs-on: ubuntu-latest steps: - uses: actions/checkout@v4 - run: npm ci && npm test # ← add this one step - uses: patchwork-sh/render@v1 with: api-key: ${{ secrets.PATCHWORK_KEY }} output: ./release-artifacts/ - uses: actions/upload-artifact@v4 with: name: release path: ./release-artifacts/"
+        - generic [ref=f11e861]:
+          - generic [ref=f11e862]:
+            - generic [ref=f11e863]: ◐
+            - generic [ref=f11e864]: GitHub Actions
+            - generic [ref=f11e865]: supported
+          - generic [ref=f11e866]:
+            - generic [ref=f11e867]: ◑
+            - generic [ref=f11e868]: GitLab CI
+            - generic [ref=f11e869]: supported
+          - generic [ref=f11e870]:
+            - generic [ref=f11e871]: ◒
+            - generic [ref=f11e872]: CircleCI
+            - generic [ref=f11e873]: supported
+          - generic [ref=f11e874]:
+            - generic [ref=f11e875]: ◓
+            - generic [ref=f11e876]: Buildkite
+            - generic [ref=f11e877]: supported
+          - generic [ref=f11e878]:
+            - generic [ref=f11e879]: ◔
+            - generic [ref=f11e880]: Vercel / Deploy hooks
+            - generic [ref=f11e881]: supported
+    - generic [ref=f11e883]:
+      - generic [ref=f11e884]:
+        - generic [ref=f11e885]: · Who's it for
+        - heading "Built for teams that ship." [level=2] [ref=f11e886]
+      - generic [ref=f11e887]:
+        - article [ref=f11e888]:
+          - generic [ref=f11e889]: Open source
+          - heading "Maintainers who care about community." [level=3] [ref=f11e893]
+          - paragraph [ref=f11e894]: Your users run your code. They deserve to know what changed and why — without spelunking through commit history. Patchwork gives every release a story your community can actually watch.
+          - generic [ref=f11e895]:
+            - paragraph [ref=f11e896]: "\"We went from 3 changelogs a year to 3 a week.\""
+            - paragraph [ref=f11e897]: — Maintainer, 14k★ framework
+        - article [ref=f11e898]:
+          - generic [ref=f11e899]: Startup
+          - heading "Early teams shipping fast." [level=3] [ref=f11e906]
+          - paragraph [ref=f11e907]: You're 4 people. You're shipping every week. Nobody has time to write release notes — but every release is a chance to grow. Patchwork turns your velocity into distribution.
+          - generic [ref=f11e908]:
+            - paragraph [ref=f11e909]: "\"Our X following doubled in a quarter without us posting manually.\""
+            - paragraph [ref=f11e910]: — Founder, Series A devtools
+        - article [ref=f11e911]:
+          - generic [ref=f11e912]: Scaling SaaS
+          - heading "Companies that can't go stale." [level=3] [ref=f11e918]
+          - paragraph [ref=f11e919]: When you have 50 features shipping a month, documentation rots fast. Patchwork keeps your release notes, walkthroughs, and migration guides as fresh as the code — because they're generated from the code.
+          - generic [ref=f11e920]:
+            - paragraph [ref=f11e921]: "\"Our support tickets about 'what changed' dropped 40%.\""
+            - paragraph [ref=f11e922]: — Head of DX, 800-person SaaS
+      - generic [ref=f11e923]:
+        - generic [ref=f11e924]: Trusted by teams shipping · private beta
+        - generic [ref=f11e925]:
+          - generic [ref=f11e926]: ACME
+          - generic [ref=f11e927]: MERIDIAN
+          - generic [ref=f11e928]: FORGE
+          - generic [ref=f11e929]: PARALLEL
+          - generic [ref=f11e930]: OBELISK
+          - generic [ref=f11e931]: HALCYON
+    - generic [ref=f11e932]:
+      - img [ref=f11e934]:
+        - generic [ref=f11e936]: "01"
+        - generic [ref=f11e943]: "02"
+        - generic [ref=f11e950]: "03"
+        - generic [ref=f11e957]: "04"
+        - generic [ref=f11e964]: "05"
+        - generic [ref=f11e971]: "06"
+        - generic [ref=f11e978]: "07"
+        - generic [ref=f11e985]: "08"
+        - generic [ref=f11e992]: "09"
+        - generic [ref=f11e999]: "10"
+        - generic [ref=f11e1006]: "11"
+        - generic [ref=f11e1013]: "12"
+      - generic [ref=f11e1021]:
+        - generic [ref=f11e1022]:
+          - generic [ref=f11e1024]: Reel 024 · Now recording
+          - generic [ref=f11e1025]:
+            - generic [ref=f11e1026]: TC
+            - generic [ref=f11e1027]: 00:00:01:12
+        - heading "Ready to ship the story?" [level=2] [ref=f11e1028]
+        - paragraph [ref=f11e1029]: We're onboarding teams in small batches so we can shape the product around your release workflow. Join 412 teams on the waitlist.
+        - generic [ref=f11e1030]:
+          - generic [ref=f11e1031]: Work email
+          - generic [ref=f11e1032]:
+            - textbox "Work email" [ref=f11e1033]:
+              - /placeholder: you@yourcompany.dev
+            - button "Request invite" [ref=f11e1034] [cursor=pointer]
+          - paragraph [ref=f11e1035]: No credit card · ~3 day review · Cancel anytime
+        - generic [ref=f11e1036]:
+          - generic [ref=f11e1037]: GitHub-native setup
+          - generic [ref=f11e1042]: Self-serve, or we help
+          - generic [ref=f11e1047]: Bring your own brand voice
+  - contentinfo [ref=f11e1052]:
+    - img [ref=f11e1054]:
+      - generic [ref=f11e1056]: "01"
+      - generic [ref=f11e1063]: "02"
+      - generic [ref=f11e1070]: "03"
+      - generic [ref=f11e1077]: "04"
+      - generic [ref=f11e1084]: "05"
+      - generic [ref=f11e1091]: "06"
+      - generic [ref=f11e1098]: "07"
+      - generic [ref=f11e1105]: "08"
+      - generic [ref=f11e1112]: "09"
+      - generic [ref=f11e1119]: "10"
+      - generic [ref=f11e1126]: "11"
+      - generic [ref=f11e1133]: "12"
+      - generic [ref=f11e1140]: "13"
+      - generic [ref=f11e1147]: "14"
+      - generic [ref=f11e1154]: "15"
+      - generic [ref=f11e1161]: "16"
+      - generic [ref=f11e1168]: "17"
+      - generic [ref=f11e1175]: "18"
+      - generic [ref=f11e1182]: "19"
+      - generic [ref=f11e1189]: "20"
+      - generic [ref=f11e1196]: "21"
+      - generic [ref=f11e1203]: "22"
+      - generic [ref=f11e1210]: "23"
+      - generic [ref=f11e1217]: "24"
+    - generic [ref=f11e1224]:
+      - generic [ref=f11e1225]:
+        - generic [ref=f11e1226]:
+          - paragraph [ref=f11e1227]: Patchwork turns every release into a story worth telling. Built for teams who ship.
+          - generic [ref=f11e1228]: All systems reel-ing
+          - generic [ref=f11e1230]:
+            - generic [ref=f11e1231]: Email for updates
+            - generic [ref=f11e1232]:
+              - textbox "Email for updates" [ref=f11e1237]:
+                - /placeholder: updates@yourcompany.dev
+              - button [ref=f11e1238] [cursor=pointer]
+            - paragraph [ref=f11e1239]: Release tips, no spam.
+        - generic [ref=f11e1240]:
+          - generic [ref=f11e1241]:
+            - heading "Product" [level=4] [ref=f11e1242]
+            - list [ref=f11e1243]:
+              - listitem [ref=f11e1244]:
+                - link "How it works" [ref=f11e1245] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1246]:
+                - link "The reel" [ref=f11e1247] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1248]:
+                - link "Pipeline" [ref=f11e1249] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1250]:
+                - link "Changelog" [ref=f11e1251] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=f11e1252]:
+            - heading "Resources" [level=4] [ref=f11e1253]
+            - list [ref=f11e1254]:
+              - listitem [ref=f11e1255]:
+                - link "Docs" [ref=f11e1256] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1257]:
+                - link "API reference" [ref=f11e1258] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1259]:
+                - link "Examples" [ref=f11e1260] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1261]:
+                - link "Status" [ref=f11e1262] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=f11e1263]:
+            - heading "Company" [level=4] [ref=f11e1264]
+            - list [ref=f11e1265]:
+              - listitem [ref=f11e1266]:
+                - link "About" [ref=f11e1267] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1268]:
+                - link "Blog" [ref=f11e1269] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1270]:
+                - link "Careers" [ref=f11e1271] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f11e1272]:
+                - link "Contact" [ref=f11e1273] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=f11e1274]:
+        - generic [ref=f11e1275]: © 2026 Patchwork Labs · Made for people who ship
+        - generic [ref=f11e1276]:
+          - link "Privacy" [ref=f11e1277] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=f11e1278] [cursor=pointer]:
+            - /url: "#"
+          - link "Security" [ref=f11e1279] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=f11e1280]: PATCHWORK
