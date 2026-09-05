@@ -10,6 +10,28 @@ export default {
     },
     extend: {
       colors: {
+        background: "#FFFFFF",
+        surface: "#F8F8F7",
+        "surface-hover": "#F0F0EE",
+        border: "#E7E5E4",
+        "border-strong": "#D7D5D4",
+        foreground: "#1C1917",
+        muted: "#57534E",
+        subtle: "#A8A29E",
+        accent: {
+          DEFAULT: "#F5B700",
+          glow: "#FFC93C",
+          subtle: "#FEF3C7",
+        },
+        "accent-text": "#1C1917",
+        success: "#16A34A",
+        "success-subtle": "#F0FDF4",
+        warning: "#D97706",
+        "warning-subtle": "#FFFBEB",
+        danger: "#DC2626",
+        "danger-subtle": "#FEF2F2",
+        // Legacy warm palette kept for reference during migration.
+        // Prefer the semantic tokens above for all new work.
         ink: "#0B0908",
         paper: "#F4ECD8",
         amber: {

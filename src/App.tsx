@@ -11,7 +11,7 @@ import { Footer } from "@/components/sections/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-ink text-paper">
+    <div className="min-h-screen bg-background text-foreground">
       <Nav />
       <Marquee
         items={[

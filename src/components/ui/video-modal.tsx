@@ -217,7 +217,7 @@ export function VideoModal({
           {/* Backdrop */}
           <div
             onClick={() => onOpenChange(false)}
-            className="absolute inset-0 bg-ink/85 backdrop-blur-md"
+            className="absolute inset-0 bg-foreground/40 backdrop-blur-md"
             aria-hidden
           />
 
@@ -233,20 +233,20 @@ export function VideoModal({
             {/* Header */}
             <div className="flex items-start justify-between gap-6 mb-4 px-1">
               <div className="flex flex-col gap-1">
-                <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-widish text-amber">
-                  <span className="inline-block h-2 w-2 rounded-full bg-amber animate-pulseSoft" />
+                <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-widish text-accent">
+                  <span className="inline-block h-2 w-2 rounded-full bg-accent animate-pulseSoft" />
                   Now Playing · Reel 024
                 </div>
-                <h2 className="font-display text-2xl md:text-3xl font-black text-paper tracking-tightest leading-none">
+                <h2 className="font-display text-2xl md:text-3xl font-black text-foreground tracking-tightest leading-none">
                   {title}
                 </h2>
-                <p className="font-mono text-[11px] text-paper/50 tracking-widish">
+                <p className="font-mono text-[11px] text-muted tracking-widish">
                   {subtitle}
                 </p>
               </div>
               <button
                 onClick={() => onOpenChange(false)}
-                className="group flex items-center gap-2 border border-line bg-charcoal/80 hover:border-amber hover:text-amber text-paper/70 px-4 py-2 font-mono text-[10px] uppercase tracking-widish transition-colors"
+                className="group flex items-center gap-2 border border-border bg-white hover:border-accent hover:text-accent text-muted px-4 py-2 font-mono text-[10px] uppercase tracking-widish transition-colors shadow-sm"
                 aria-label="Close video"
               >
                 Close
@@ -255,29 +255,29 @@ export function VideoModal({
             </div>
 
             {/* Video frame */}
-            <div className="pro-frame relative overflow-hidden bg-ink">
+            <div className="pro-frame relative overflow-hidden bg-white">
               {/* Top metadata bar */}
-              <div className="flex items-center justify-between border-b border-line/80 px-5 py-2.5 bg-charcoal/60">
+              <div className="flex items-center justify-between border-b border-border px-5 py-2.5 bg-surface">
                 <div className="flex items-center gap-3">
                   <div className="flex gap-1.5">
-                    <span className="h-2.5 w-2.5 rounded-full bg-rust/70" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-amber/70" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-paper/30" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-danger/70" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-muted/40" />
                   </div>
-                  <span className="font-mono text-[10px] tracking-widish text-paper/50 uppercase">
+                  <span className="font-mono text-[10px] tracking-widish text-muted uppercase">
                     patchwork-promo.mp4 · 1280×720 · 30fps
                   </span>
                 </div>
-                <div className="flex items-center gap-4 font-mono text-[10px] tracking-widish text-paper/50">
-                  <span className="hidden sm:inline text-amber">AUTO-GENERATED</span>
-                  <span className="text-paper/40">
+                <div className="flex items-center gap-4 font-mono text-[10px] tracking-widish text-muted">
+                  <span className="hidden sm:inline text-accent">AUTO-GENERATED</span>
+                  <span className="text-subtle">
                     {formatTime(duration)} TOTAL
                   </span>
                 </div>
               </div>
 
               {/* Player */}
-              <div className="relative aspect-video bg-ink overflow-hidden">
+              <div className="relative aspect-video bg-surface overflow-hidden">
                 <video
                   ref={videoRef}
                   src={src}
@@ -305,10 +305,10 @@ export function VideoModal({
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       onClick={togglePlay}
-                      className="absolute inset-0 flex items-center justify-center bg-ink/40 group"
+                      className="absolute inset-0 flex items-center justify-center bg-foreground/10 group"
                       aria-label="Play video"
                     >
-                      <span className="flex items-center justify-center h-20 w-20 md:h-24 md:w-24 rounded-full bg-amber text-ink shadow-2xl group-hover:scale-110 transition-transform">
+                      <span className="flex items-center justify-center h-20 w-20 md:h-24 md:w-24 rounded-full bg-accent text-accent-text shadow-2xl group-hover:scale-110 transition-transform">
                         <Play size={32} fill="currentColor" className="ml-1" />
                       </span>
                     </motion.button>
@@ -319,10 +319,10 @@ export function VideoModal({
                 {!isPlaying && hasStarted && currentTime > 0 && currentTime < duration && (
                   <button
                     onClick={togglePlay}
-                    className="absolute inset-0 flex items-center justify-center bg-ink/30 group"
+                    className="absolute inset-0 flex items-center justify-center bg-foreground/10 group"
                     aria-label="Resume video"
                   >
-                    <span className="flex items-center justify-center h-16 w-16 md:h-20 md:w-20 rounded-full bg-paper/95 text-ink shadow-2xl group-hover:scale-110 transition-transform">
+                    <span className="flex items-center justify-center h-16 w-16 md:h-20 md:w-20 rounded-full bg-white text-foreground shadow-2xl group-hover:scale-110 transition-transform">
                       <Play size={28} fill="currentColor" className="ml-1" />
                     </span>
                   </button>
@@ -330,16 +330,16 @@ export function VideoModal({
               </div>
 
               {/* Controls */}
-              <div className="border-t border-line/80 bg-charcoal/80 px-4 md:px-5 py-3 flex flex-col gap-3">
+              <div className="border-t border-border bg-surface px-4 md:px-5 py-3 flex flex-col gap-3">
                 {/* Chapter markers row */}
-                <div className="hidden md:flex items-center gap-1.5 text-[9px] font-mono uppercase tracking-widish text-paper/40">
+                <div className="hidden md:flex items-center gap-1.5 text-[9px] font-mono uppercase tracking-widish text-muted">
                   {chapters.map((c, i) => (
                     <button
                       key={c.label}
                       onClick={() => seekTo(c.at)}
                       className={cn(
-                        "flex items-center gap-1.5 px-1.5 py-1 hover:text-amber transition-colors",
-                        i === activeChapterIdx && "text-amber"
+                        "flex items-center gap-1.5 px-1.5 py-1 hover:text-accent transition-colors",
+                        i === activeChapterIdx && "text-accent"
                       )}
                       title={`Jump to ${c.label} (${formatTime(c.at)})`}
                     >
@@ -347,10 +347,10 @@ export function VideoModal({
                         className={cn(
                           "inline-block h-1 w-1 rounded-full",
                           i === activeChapterIdx
-                            ? "bg-amber"
+                            ? "bg-accent"
                             : i < activeChapterIdx
-                            ? "bg-paper/30"
-                            : "bg-paper/15"
+                            ? "bg-muted"
+                            : "bg-border-strong"
                         )}
                       />
                       {c.label}
@@ -363,13 +363,13 @@ export function VideoModal({
                   ref={scrubberRef}
                   onPointerDown={onScrubberPointerDown}
                   onPointerMove={onScrubberPointerMove}
-                  className="relative h-1.5 w-full cursor-pointer group bg-line/60"
+                  className="relative h-1.5 w-full cursor-pointer group bg-border"
                 >
                   {/* Hover/buffer track */}
-                  <div className="absolute inset-0 bg-line/60" />
+                  <div className="absolute inset-0 bg-border" />
                   {/* Progress */}
                   <div
-                    className="absolute inset-y-0 left-0 bg-amber"
+                    className="absolute inset-y-0 left-0 bg-accent"
                     style={{ width: `${progressPct}%` }}
                   />
                   {/* Chapter ticks */}
@@ -378,7 +378,7 @@ export function VideoModal({
                     return (
                       <div
                         key={c.label}
-                        className="absolute top-0 bottom-0 w-px bg-paper/30"
+                        className="absolute top-0 bottom-0 w-px bg-muted"
                         style={{ left: `${left}%` }}
                         aria-hidden
                       />
@@ -386,7 +386,7 @@ export function VideoModal({
                   })}
                   {/* Thumb */}
                   <div
-                    className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 h-3 w-3 rounded-full bg-amber opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 h-3 w-3 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"
                     style={{ left: `${progressPct}%` }}
                   />
                 </div>
@@ -396,30 +396,30 @@ export function VideoModal({
                   <div className="flex items-center gap-3">
                     <button
                       onClick={togglePlay}
-                      className="flex items-center justify-center h-9 w-9 rounded-full border border-amber bg-amber text-ink hover:bg-amber-glow transition-colors"
+                      className="flex items-center justify-center h-9 w-9 rounded-full border border-accent bg-accent text-accent-text hover:bg-accent-glow transition-colors"
                       aria-label={isPlaying ? "Pause" : "Play"}
                     >
                       {isPlaying ? <Pause size={16} fill="currentColor" /> : <Play size={16} fill="currentColor" className="ml-0.5" />}
                     </button>
                     <button
                       onClick={() => seekTo(0)}
-                      className="text-paper/60 hover:text-amber transition-colors"
+                      className="text-muted hover:text-accent transition-colors"
                       aria-label="Restart"
                       title="Restart"
                     >
                       <RotateCcw size={14} />
                     </button>
-                    <div className="font-mono text-[11px] text-paper/70 tabular-nums">
-                      <span className="text-paper">{formatTime(currentTime)}</span>
-                      <span className="text-paper/30 mx-1">/</span>
-                      <span className="text-paper/50">{formatTime(duration)}</span>
+                    <div className="font-mono text-[11px] text-muted tabular-nums">
+                      <span className="text-foreground">{formatTime(currentTime)}</span>
+                      <span className="text-subtle mx-1">/</span>
+                      <span className="text-muted">{formatTime(duration)}</span>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => setMuted((m) => !m)}
-                      className="text-paper/60 hover:text-amber transition-colors"
+                      className="text-muted hover:text-accent transition-colors"
                       aria-label={muted ? "Unmute" : "Mute"}
                     >
                       {muted || volume === 0 ? <VolumeX size={16} /> : <Volume2 size={16} />}
@@ -435,12 +435,12 @@ export function VideoModal({
                         setVolume(v);
                         if (v > 0) setMuted(false);
                       }}
-                      className="w-20 md:w-24 accent-amber cursor-pointer"
+                      className="w-20 md:w-24 accent-accent cursor-pointer"
                       aria-label="Volume"
                     />
                     <button
                       onClick={toggleFullscreen}
-                      className="ml-2 text-paper/60 hover:text-amber transition-colors"
+                      className="ml-2 text-muted hover:text-accent transition-colors"
                       aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
                     >
                       <Maximize size={16} />
@@ -451,19 +451,19 @@ export function VideoModal({
             </div>
 
             {/* Bottom hint */}
-            <div className="mt-3 flex flex-wrap items-center justify-between gap-3 px-1 font-mono text-[10px] text-paper/40 tracking-widish">
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-3 px-1 font-mono text-[10px] text-muted tracking-widish">
               <span>
-                <kbd className="border border-line bg-charcoal px-1.5 py-0.5 text-paper/60">SPACE</kbd>{" "}
+                <kbd className="border border-border bg-white px-1.5 py-0.5 text-muted">SPACE</kbd>{" "}
                 play/pause ·{" "}
-                <kbd className="border border-line bg-charcoal px-1.5 py-0.5 text-paper/60">←</kbd>{" "}
-                <kbd className="border border-line bg-charcoal px-1.5 py-0.5 text-paper/60">→</kbd>{" "}
+                <kbd className="border border-border bg-white px-1.5 py-0.5 text-muted">←</kbd>{" "}
+                <kbd className="border border-border bg-white px-1.5 py-0.5 text-muted">→</kbd>{" "}
                 skip 5s ·{" "}
-                <kbd className="border border-line bg-charcoal px-1.5 py-0.5 text-paper/60">M</kbd>{" "}
+                <kbd className="border border-border bg-white px-1.5 py-0.5 text-muted">M</kbd>{" "}
                 mute ·{" "}
-                <kbd className="border border-line bg-charcoal px-1.5 py-0.5 text-paper/60">F</kbd>{" "}
+                <kbd className="border border-border bg-white px-1.5 py-0.5 text-muted">F</kbd>{" "}
                 fullscreen
               </span>
-              <span className="text-paper/30">ESC to close</span>
+              <span className="text-subtle">ESC to close</span>
             </div>
           </motion.div>
         </motion.div>

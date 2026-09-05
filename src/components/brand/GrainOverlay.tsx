@@ -3,10 +3,10 @@ interface GrainOverlayProps {
   opacity?: number;
 }
 
-export function GrainOverlay({ className, opacity = 0.08 }: GrainOverlayProps) {
+export function GrainOverlay({ className, opacity = 0.04 }: GrainOverlayProps) {
   return (
     <div
-      className={`pointer-events-none absolute inset-0 mix-blend-overlay ${className || ""}`}
+      className={`pointer-events-none absolute inset-0 mix-blend-multiply ${className || ""}`}
       style={{ opacity }}
       aria-hidden
     >

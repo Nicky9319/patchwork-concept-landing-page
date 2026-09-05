@@ -47,7 +47,7 @@ export function Logo({ className, showWordmark = true, size = "md" }: LogoProps)
       {showWordmark && (
         <span
           className={cn(
-            "font-display font-black tracking-tightest text-paper leading-none",
+            "font-display font-black tracking-tightest text-foreground leading-none",
             dims.font
           )}
         >

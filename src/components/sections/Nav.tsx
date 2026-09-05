@@ -14,7 +14,7 @@ export function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line/60 bg-ink/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border bg-white/85 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center">
           <Logo size="sm" />
@@ -25,7 +25,7 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="font-mono text-[11px] uppercase tracking-widish text-paper/70 hover:text-amber transition-colors"
+              className="font-mono text-[11px] uppercase tracking-widish text-muted hover:text-foreground transition-colors"
             >
               {l.label}
             </a>
@@ -35,7 +35,7 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-3">
           <a
             href="#login"
-            className="font-mono text-[11px] uppercase tracking-widish text-paper/70 hover:text-paper"
+            className="font-mono text-[11px] uppercase tracking-widish text-muted hover:text-foreground"
           >
             Log in
           </a>
@@ -45,7 +45,7 @@ export function Nav() {
         </div>
 
         <button
-          className="md:hidden text-paper"
+          className="md:hidden text-foreground"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -54,13 +54,13 @@ export function Nav() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-line bg-ink">
+        <div className="md:hidden border-t border-border bg-white">
           <div className="container py-4 flex flex-col gap-3">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="font-mono text-[11px] uppercase tracking-widish text-paper/70 py-2"
+                className="font-mono text-[11px] uppercase tracking-widish text-muted py-2"
                 onClick={() => setOpen(false)}
               >
                 {l.label}

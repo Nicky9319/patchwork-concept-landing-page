@@ -29,46 +29,46 @@ const cases = [
 
 export function UseCases() {
   return (
-    <section id="audience" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="audience" className="relative py-24 md:py-32 overflow-hidden bg-surface/30">
       <div className="container relative">
         <div className="max-w-3xl mb-16">
-          <span className="inline-block font-mono text-[10px] uppercase tracking-widish text-amber mb-6">
+          <span className="inline-block font-mono text-[10px] uppercase tracking-widish text-accent mb-6">
             · Who's it for
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tightest text-paper text-balance">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tightest text-foreground text-balance">
             Built for teams that{" "}
-            <span className="italic font-light text-amber">ship</span>.
+            <span className="italic font-light text-accent">ship</span>.
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-px bg-line">
+        <div className="grid lg:grid-cols-3 gap-px bg-border">
           {cases.map((c) => (
             <article
               key={c.tag}
-              className="bg-ink p-8 md:p-10 flex flex-col h-full group hover:bg-charcoal/40 transition-colors"
+              className="bg-white p-8 md:p-10 flex flex-col h-full group hover:bg-surface transition-colors"
             >
               <div className="flex items-center justify-between mb-6">
                 <c.icon
                   size={22}
-                  className="text-amber"
+                  className="text-accent"
                   strokeWidth={1.5}
                 />
-                <span className="font-mono text-[10px] uppercase tracking-widish text-paper/40">
+                <span className="font-mono text-[10px] uppercase tracking-widish text-muted">
                   {c.tag}
                 </span>
               </div>
-              <h3 className="font-display text-2xl md:text-3xl text-paper tracking-tightest leading-tight mb-4 text-balance">
+              <h3 className="font-display text-2xl md:text-3xl text-foreground tracking-tightest leading-tight mb-4 text-balance">
                 {c.title}
               </h3>
-              <p className="text-paper/60 leading-relaxed text-[15px] flex-1 text-pretty">
+              <p className="text-muted leading-relaxed text-[15px] flex-1 text-pretty">
                 {c.body}
               </p>
 
-              <div className="mt-8 pt-6 border-t border-line/60">
-                <p className="font-display italic font-light text-paper/90 text-lg leading-snug text-balance">
+              <div className="mt-8 pt-6 border-t border-border">
+                <p className="font-display italic font-light text-foreground/90 text-lg leading-snug text-balance">
                   {c.quote}
                 </p>
-                <p className="font-mono text-[10px] uppercase tracking-widish text-paper/40 mt-3">
+                <p className="font-mono text-[10px] uppercase tracking-widish text-muted mt-3">
                   — {c.cite}
                 </p>
               </div>
@@ -77,16 +77,16 @@ export function UseCases() {
         </div>
 
         {/* Logos strip */}
-        <div className="mt-20 border-t border-line pt-10">
-          <div className="font-mono text-[10px] uppercase tracking-widish text-paper/40 mb-6 text-center">
+        <div className="mt-20 border-t border-border pt-10">
+          <div className="font-mono text-[10px] uppercase tracking-widish text-muted mb-6 text-center">
             Trusted by teams shipping · private beta
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-70">
+          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
             {["ACME", "MERIDIAN", "FORGE", "PARALLEL", "OBELISK", "HALCYON"].map(
               (logo) => (
                 <span
                   key={logo}
-                  className="font-display text-xl tracking-tightest text-paper/50 hover:text-amber transition-colors"
+                  className="font-display text-xl tracking-tightest text-muted hover:text-accent transition-colors"
                 >
                   {logo}
                 </span>

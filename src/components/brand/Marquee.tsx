@@ -28,10 +28,10 @@ export function Marquee({
       {[...items, ...items, ...items, ...items].map((item, i) => (
         <span
           key={i}
-          className="font-mono text-[11px] uppercase tracking-widish text-paper/70 flex items-center gap-8"
+          className="font-mono text-[11px] uppercase tracking-widish text-muted flex items-center gap-8"
         >
           <span>{item}</span>
-          <span className="text-amber">{separator}</span>
+          <span className="text-accent">{separator}</span>
         </span>
       ))}
     </div>
@@ -40,7 +40,7 @@ export function Marquee({
   return (
     <div
       className={cn(
-        "relative overflow-hidden border-y border-line bg-charcoal/40 py-3 marquee-mask",
+        "relative overflow-hidden border-y border-border bg-surface py-3 marquee-mask",
         className
       )}
     >

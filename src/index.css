@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   html {
@@ -16,11 +16,13 @@
 
   body {
     font-feature-settings: "ss01", "ss02", "cv11";
+    background-color: #ffffff;
+    color: #1c1917;
   }
 
   ::selection {
     background: #f5b700;
-    color: #0b0908;
+    color: #1c1917;
   }
 
   h1, h2, h3, h4 {
@@ -47,15 +49,15 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    opacity: 0.06;
-    mix-blend-mode: overlay;
+    opacity: 0.03;
+    mix-blend-mode: multiply;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.85'/></svg>");
   }
 
   .paper-texture {
     background-image:
       radial-gradient(circle at 25% 25%, rgba(245, 183, 0, 0.04) 0%, transparent 40%),
-      radial-gradient(circle at 75% 75%, rgba(217, 72, 15, 0.03) 0%, transparent 40%);
+      radial-gradient(circle at 75% 75%, rgba(217, 72, 15, 0.02) 0%, transparent 40%);
   }
 
   .marquee-mask {
@@ -75,23 +77,23 @@
   .reveal-7 { animation-delay: 0.65s; }
 
   .pro-frame {
-    border: 1px solid #2a241e;
-    background: linear-gradient(180deg, #131110 0%, #0b0908 100%);
+    border: 1px solid #e7e5e4;
+    background: linear-gradient(180deg, #ffffff 0%, #fafaf9 100%);
     box-shadow:
-      0 1px 0 rgba(245, 183, 0, 0.08) inset,
-      0 30px 80px -20px rgba(0, 0, 0, 0.6),
+      0 1px 0 rgba(255, 255, 255, 0.8) inset,
+      0 20px 50px -15px rgba(0, 0, 0, 0.08),
       0 0 0 1px rgba(245, 183, 0, 0.04);
   }
 
   .ticker-tab {
-    border-top: 1px solid #2a241e;
-    border-bottom: 1px solid #2a241e;
+    border-top: 1px solid #e7e5e4;
+    border-bottom: 1px solid #e7e5e4;
   }
 
   .grid-paper {
     background-image:
-      linear-gradient(to right, rgba(245, 183, 0, 0.04) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(245, 183, 0, 0.04) 1px, transparent 1px);
+      linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
     background-size: 56px 56px;
   }
 
@@ -100,6 +102,6 @@
   }
 
   .warm-gradient {
-    background: linear-gradient(180deg, #1a1714 0%, #0b0908 100%);
+    background: linear-gradient(180deg, #fafaf9 0%, #ffffff 100%);
   }
 }

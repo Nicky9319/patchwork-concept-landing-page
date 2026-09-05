@@ -1,37 +1,26 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Video, FileText, Twitter, BookOpen, Mail } from "lucide-react";
-import { GrainOverlay } from "@/components/brand/GrainOverlay";
 
 export function Outputs() {
   return (
     <section
       id="reel"
-      className="relative py-24 md:py-32 overflow-hidden border-y border-line"
+      className="relative py-24 md:py-32 overflow-hidden border-y border-border bg-surface/30"
     >
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(180deg, #0b0908 0%, #131110 50%, #0b0908 100%)",
-        }}
-        aria-hidden
-      />
-      <GrainOverlay opacity={0.06} />
-
       <div className="container relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-end mb-12 md:mb-16">
           <div className="lg:col-span-7">
-            <span className="inline-block font-mono text-[10px] uppercase tracking-widish text-amber mb-6">
+            <span className="inline-block font-mono text-[10px] uppercase tracking-widish text-accent mb-6">
               · The reel
             </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tightest text-paper text-balance">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tightest text-foreground text-balance">
               One release.{" "}
-              <span className="italic font-light text-amber">Five</span>{" "}
+              <span className="italic font-light text-accent">Five</span>{" "}
               outputs.
             </h2>
           </div>
           <div className="lg:col-span-5">
-            <p className="text-paper/60 text-lg leading-relaxed text-pretty">
+            <p className="text-muted text-lg leading-relaxed text-pretty">
               Same source — your merged PRs. Patchwork formats the story for
               every surface it lives on. You review, not write.
             </p>
@@ -70,36 +59,35 @@ export function Outputs() {
                   className="absolute inset-0"
                   style={{
                     background:
-                      "radial-gradient(circle at 70% 30%, rgba(245,183,0,0.15) 0%, transparent 50%), linear-gradient(135deg, #1a1714 0%, #0b0908 100%)",
+                      "radial-gradient(circle at 70% 30%, rgba(245,183,0,0.10) 0%, transparent 50%), linear-gradient(135deg, #fafaf9 0%, #ffffff 100%)",
                   }}
                 />
-                <GrainOverlay opacity={0.1} />
                 <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-between">
                   <div>
-                    <div className="font-mono text-[10px] uppercase tracking-widish text-amber">
+                    <div className="font-mono text-[10px] uppercase tracking-widish text-accent">
                       Scene 01 · Title
                     </div>
-                    <div className="font-display text-4xl md:text-6xl text-paper mt-2 leading-[0.95] tracking-tightest">
+                    <div className="font-display text-4xl md:text-6xl text-foreground mt-2 leading-[0.95] tracking-tightest">
                       v2.4.0 —{" "}
-                      <span className="italic font-light text-amber">
+                      <span className="italic font-light text-accent">
                         auth, reimagined
                       </span>
                     </div>
-                    <div className="font-mono text-[11px] text-paper/40 mt-3">
+                    <div className="font-mono text-[11px] text-muted mt-3">
                       generated in 87s · 14 PRs · 2 breaking changes
                     </div>
                   </div>
                   <div className="flex items-end justify-between">
-                    <div className="font-mono text-[10px] uppercase tracking-widish text-paper/30">
+                    <div className="font-mono text-[10px] uppercase tracking-widish text-subtle">
                       <div>RUNTIME 04:38</div>
                       <div className="mt-1">ASPECT 16:9</div>
                       <div className="mt-1">VOICE NARRATED</div>
                     </div>
                     <div className="text-right">
-                      <div className="font-mono text-[10px] uppercase tracking-widish text-amber/80">
+                      <div className="font-mono text-[10px] uppercase tracking-widish text-accent/80">
                         A Patchwork production
                       </div>
-                      <div className="font-display text-2xl text-paper mt-1">
+                      <div className="font-display text-2xl text-foreground mt-1">
                         The Reel ↘
                       </div>
                     </div>
@@ -107,44 +95,44 @@ export function Outputs() {
                 </div>
               </div>
 
-              <div className="bg-charcoal/60 border border-line p-5 flex flex-col gap-4">
-                <div className="font-mono text-[10px] uppercase tracking-widish text-paper/40">
+              <div className="bg-white border border-border p-5 flex flex-col gap-4 shadow-sm">
+                <div className="font-mono text-[10px] uppercase tracking-widish text-muted">
                   Production notes
                 </div>
-                <div className="space-y-3 text-sm text-paper/70 leading-relaxed">
+                <div className="space-y-3 text-sm text-muted leading-relaxed">
                   <p>
-                    <span className="text-amber">▸ Script</span> drafted from PR
+                    <span className="text-accent">▸ Script</span> drafted from PR
                     descriptions and diffs
                   </p>
                   <p>
-                    <span className="text-amber">▸ Voiceover</span> narrated in
+                    <span className="text-accent">▸ Voiceover</span> narrated in
                     plain English, not changelog-speak
                   </p>
                   <p>
-                    <span className="text-amber">▸ Visuals</span>{" "}
+                    <span className="text-accent">▸ Visuals</span>{" "}
                     auto-generated from your UI (Playwright captures)
                   </p>
                   <p>
-                    <span className="text-amber">▸ Captions</span> burned in
+                    <span className="text-accent">▸ Captions</span> burned in
                     (vertical + horizontal variants)
                   </p>
                 </div>
-                <div className="mt-auto pt-4 border-t border-line/60 space-y-2 font-mono text-[11px]">
+                <div className="mt-auto pt-4 border-t border-border/60 space-y-2 font-mono text-[11px]">
                   <div className="flex justify-between">
-                    <span className="text-paper/40">16:9 master</span>
-                    <span className="text-paper">release-reel.mp4</span>
+                    <span className="text-subtle">16:9 master</span>
+                    <span className="text-foreground">release-reel.mp4</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-paper/40">9:16 vertical</span>
-                    <span className="text-paper">reel-tiktok.mp4</span>
+                    <span className="text-subtle">9:16 vertical</span>
+                    <span className="text-foreground">reel-tiktok.mp4</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-paper/40">1:1 square</span>
-                    <span className="text-paper">reel-square.mp4</span>
+                    <span className="text-subtle">1:1 square</span>
+                    <span className="text-foreground">reel-square.mp4</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-paper/40">SRT captions</span>
-                    <span className="text-paper">reel.srt</span>
+                    <span className="text-subtle">SRT captions</span>
+                    <span className="text-foreground">reel.srt</span>
                   </div>
                 </div>
               </div>
@@ -154,17 +142,17 @@ export function Outputs() {
           {/* Changelog */}
           <TabsContent value="changelog">
             <div className="grid lg:grid-cols-[1fr_280px] gap-6">
-              <div className="bg-ink border border-line font-mono text-[12px] leading-relaxed overflow-hidden">
-                <div className="flex items-center justify-between border-b border-line px-4 py-3 bg-charcoal/60">
+              <div className="bg-white border border-border font-mono text-[12px] leading-relaxed overflow-hidden shadow-sm">
+                <div className="flex items-center justify-between border-b border-border px-4 py-3 bg-surface">
                   <div className="flex items-center gap-2">
-                    <span className="text-paper/40">📄</span>
-                    <span className="text-paper/80">CHANGELOG.md</span>
+                    <span className="text-muted">📄</span>
+                    <span className="text-foreground">CHANGELOG.md</span>
                   </div>
-                  <span className="text-paper/40 text-[10px] uppercase tracking-widish">
+                  <span className="text-muted text-[10px] uppercase tracking-widish">
                     auto-generated · 2026-06-21
                   </span>
                 </div>
-                <pre className="p-6 text-paper/85 overflow-x-auto whitespace-pre-wrap">
+                <pre className="p-6 text-foreground/85 overflow-x-auto whitespace-pre-wrap">
 {`## [2.4.0] — 2026-06-21
 
 ### ⚠ BREAKING CHANGES
@@ -190,41 +178,23 @@ _Migration guide: [migration.md](/migration/2.3-to-2.4)_`}
                 </pre>
               </div>
 
-              <div className="bg-charcoal/60 border border-line p-5">
-                <div className="font-mono text-[10px] uppercase tracking-widish text-paper/40 mb-4">
+              <div className="bg-white border border-border p-5 shadow-sm">
+                <div className="font-mono text-[10px] uppercase tracking-widish text-muted mb-4">
                   Detection sources
                 </div>
                 <ul className="space-y-3 text-sm">
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber font-mono text-[11px]">▸</span>
-                    <span className="text-paper/70">
-                      Conventional commit prefixes
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber font-mono text-[11px]">▸</span>
-                    <span className="text-paper/70">
-                      Manual BREAKING CHANGE notes in PR body
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber font-mono text-[11px]">▸</span>
-                    <span className="text-paper/70">
-                      @deprecated JSDoc tags
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber font-mono text-[11px]">▸</span>
-                    <span className="text-paper/70">
-                      AST diff of public API surface
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber font-mono text-[11px]">▸</span>
-                    <span className="text-paper/70">
-                      Schema migrations (Prisma, Drizzle, SQL)
-                    </span>
-                  </li>
+                  {[
+                    "Conventional commit prefixes",
+                    "Manual BREAKING CHANGE notes in PR body",
+                    "@deprecated JSDoc tags",
+                    "AST diff of public API surface",
+                    "Schema migrations (Prisma, Drizzle, SQL)",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="text-accent font-mono text-[11px]">▸</span>
+                      <span className="text-muted">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -263,31 +233,31 @@ For teams using legacy auth, we built a one-command migration — \`npx @patchwo
 The full release reel (with code walkthroughs) is in the comments.`,
                 },
               ].map((post) => (
-                <div key={post.platform} className="bg-ink border border-line">
-                  <div className="flex items-center justify-between border-b border-line px-4 py-3 bg-charcoal/60">
+                <div key={post.platform} className="bg-white border border-border shadow-sm">
+                  <div className="flex items-center justify-between border-b border-border px-4 py-3 bg-surface">
                     <div className="flex items-center gap-2">
-                      <span className="text-paper/40 text-[10px] uppercase tracking-widish">
+                      <span className="text-muted text-[10px] uppercase tracking-widish">
                         {post.platform}
                       </span>
-                      <span className="text-paper/30 text-[10px]">·</span>
-                      <span className="text-amber text-[10px] uppercase tracking-widish">
+                      <span className="text-subtle text-[10px]">·</span>
+                      <span className="text-accent text-[10px] uppercase tracking-widish">
                         {post.tone}
                       </span>
                     </div>
-                    <span className="text-paper/30 text-[10px]">ready to publish</span>
+                    <span className="text-subtle text-[10px]">ready to publish</span>
                   </div>
                   <div className="p-5">
-                    <div className="font-mono text-[11px] text-amber mb-3">
+                    <div className="font-mono text-[11px] text-accent mb-3">
                       {post.handle}
                     </div>
-                    <p className="text-paper/85 text-[15px] leading-relaxed whitespace-pre-line">
+                    <p className="text-foreground/85 text-[15px] leading-relaxed whitespace-pre-line">
                       {post.body}
                     </p>
-                    <div className="mt-4 pt-3 border-t border-line/40 flex items-center gap-4 text-paper/30 font-mono text-[10px]">
+                    <div className="mt-4 pt-3 border-t border-border/40 flex items-center gap-4 text-subtle font-mono text-[10px]">
                       <span>♡ 0</span>
                       <span>↻ 0</span>
                       <span>↺ 0</span>
-                      <span className="ml-auto text-amber">awaiting review</span>
+                      <span className="ml-auto text-accent">awaiting review</span>
                     </div>
                   </div>
                 </div>
@@ -298,52 +268,52 @@ The full release reel (with code walkthroughs) is in the comments.`,
           {/* Migration */}
           <TabsContent value="migration">
             <div className="grid lg:grid-cols-[1fr_280px] gap-6">
-              <div className="bg-ink border border-line">
-                <div className="flex items-center justify-between border-b border-line px-4 py-3 bg-charcoal/60">
+              <div className="bg-white border border-border shadow-sm">
+                <div className="flex items-center justify-between border-b border-border px-4 py-3 bg-surface">
                   <div className="flex items-center gap-2">
-                    <span className="text-paper/40">📘</span>
-                    <span className="text-paper/80 font-mono text-[12px]">
+                    <span className="text-muted">📘</span>
+                    <span className="text-foreground font-mono text-[12px]">
                       migration/2.3-to-2.4.md
                     </span>
                   </div>
-                  <span className="text-rust text-[10px] uppercase tracking-widish font-mono">
+                  <span className="text-danger text-[10px] uppercase tracking-widish font-mono">
                     ⚠ Breaking
                   </span>
                 </div>
-                <div className="p-6 md:p-8 space-y-5 text-[15px] text-paper/85 leading-relaxed">
+                <div className="p-6 md:p-8 space-y-5 text-[15px] text-foreground/85 leading-relaxed">
                   <div>
-                    <div className="font-mono text-[11px] uppercase tracking-widish text-amber mb-1">
+                    <div className="font-mono text-[11px] uppercase tracking-widish text-accent mb-1">
                       Step 01 · Update imports
                     </div>
-                    <code className="block bg-charcoal border border-line px-4 py-2.5 font-mono text-[13px] text-paper/90 mt-2">
+                    <code className="block bg-surface border border-border px-4 py-2.5 font-mono text-[13px] text-foreground/90 mt-2">
                       - import {"{ Provider }"} from "@/auth/v1"
                       <br />
-                      <span className="text-amber">
+                      <span className="text-success">
                         + import {"{ Provider }"} from "@/auth/v2"
                       </span>
                     </code>
                   </div>
                   <div>
-                    <div className="font-mono text-[11px] uppercase tracking-widish text-amber mb-1">
+                    <div className="font-mono text-[11px] uppercase tracking-widish text-accent mb-1">
                       Step 02 · Update init call
                     </div>
-                    <code className="block bg-charcoal border border-line px-4 py-2.5 font-mono text-[13px] text-paper/90 mt-2">
+                    <code className="block bg-surface border border-border px-4 py-2.5 font-mono text-[13px] text-foreground/90 mt-2">
                       {`- Provider.init({ legacy: true })`}
                       <br />
-                      <span className="text-amber">
-                        {`+ Provider.init({ schema: `}<span className="text-amber-glow">"2026.06"</span>{`)`}
+                      <span className="text-success">
+                        {`+ Provider.init({ schema: `}"2026.06"{`)`}
                       </span>
                     </code>
                   </div>
                   <div>
-                    <div className="font-mono text-[11px] uppercase tracking-widish text-amber mb-1">
+                    <div className="font-mono text-[11px] uppercase tracking-widish text-accent mb-1">
                       Step 03 · Run the auto-migrator
                     </div>
-                    <code className="block bg-charcoal border border-line px-4 py-2.5 font-mono text-[13px] text-paper/90 mt-2">
-                      <span className="text-paper/50">$</span>{" "}
-                      <span className="text-amber">npx @patchwork/migrate auth</span>
+                    <code className="block bg-surface border border-border px-4 py-2.5 font-mono text-[13px] text-foreground/90 mt-2">
+                      <span className="text-subtle">$</span>{" "}
+                      <span className="text-accent">npx @patchwork/migrate auth</span>
                     </code>
-                    <p className="text-paper/50 text-sm mt-2">
+                    <p className="text-muted text-sm mt-2">
                       Covers 94% of installations automatically. The remaining
                       6% get a custom diff written by Patchwork based on your
                       actual usage.
@@ -352,26 +322,26 @@ The full release reel (with code walkthroughs) is in the comments.`,
                 </div>
               </div>
 
-              <div className="bg-charcoal/60 border border-line p-5 space-y-4">
+              <div className="bg-white border border-border p-5 space-y-4 shadow-sm">
                 <div>
-                  <div className="font-mono text-[10px] uppercase tracking-widish text-paper/40">
+                  <div className="font-mono text-[10px] uppercase tracking-widish text-muted">
                     Coverage
                   </div>
-                  <div className="font-display text-3xl text-amber mt-1">94%</div>
-                  <div className="font-mono text-[10px] text-paper/40 mt-1">
+                  <div className="font-display text-3xl text-success mt-1">94%</div>
+                  <div className="font-mono text-[10px] text-muted mt-1">
                     auto-migrated
                   </div>
                 </div>
-                <div className="pt-4 border-t border-line/60">
-                  <div className="font-mono text-[10px] uppercase tracking-widish text-paper/40">
+                <div className="pt-4 border-t border-border/60">
+                  <div className="font-mono text-[10px] uppercase tracking-widish text-muted">
                     Avg. time
                   </div>
-                  <div className="font-display text-3xl text-paper mt-1">3m</div>
-                  <div className="font-mono text-[10px] text-paper/40 mt-1">
+                  <div className="font-display text-3xl text-foreground mt-1">3m</div>
+                  <div className="font-mono text-[10px] text-muted mt-1">
                     per project
                   </div>
                 </div>
-                <div className="pt-4 border-t border-line/60 text-sm text-paper/60 leading-relaxed">
+                <div className="pt-4 border-t border-border/60 text-sm text-muted leading-relaxed">
                   Patchwork analyzes your repo's actual usage before writing
                   the guide — so it never tells you to change code you don't
                   have.
@@ -383,17 +353,17 @@ The full release reel (with code walkthroughs) is in the comments.`,
           {/* Newsletter */}
           <TabsContent value="email">
             <div className="grid lg:grid-cols-[1fr_300px] gap-6">
-              <div className="bg-paper text-ink border border-paper overflow-hidden">
+              <div className="bg-white text-foreground border border-border overflow-hidden shadow-sm">
                 <div className="px-8 pt-8 pb-2 flex items-center justify-between">
                   <div className="font-display text-2xl font-black">
                     Acme / changelog
                   </div>
-                  <div className="font-mono text-[10px] uppercase tracking-widish text-ink/50">
+                  <div className="font-mono text-[10px] uppercase tracking-widish text-muted">
                     Vol. 024 · 2026-06-21
                   </div>
                 </div>
                 <div className="px-8 pt-6 pb-2">
-                  <div className="font-mono text-[11px] uppercase tracking-widish text-ink/50 mb-1">
+                  <div className="font-mono text-[11px] uppercase tracking-widish text-muted mb-1">
                     This week in Acme
                   </div>
                   <h3 className="font-display text-3xl md:text-4xl leading-tight tracking-tightest">
@@ -410,28 +380,28 @@ The full release reel (with code walkthroughs) is in the comments.`,
                   </p>
                   <p>
                     If you're on the legacy auth path, run{" "}
-                    <code className="bg-ink/10 px-1.5 py-0.5 font-mono text-[13px]">
+                    <code className="bg-surface border border-border px-1.5 py-0.5 font-mono text-[13px]">
                       npx @patchwork/migrate auth
                     </code>{" "}
                     — it handles 94% of installations in under three minutes.
                   </p>
-                  <p className="text-ink/60 text-sm pt-4 border-t border-ink/20">
+                  <p className="text-muted text-sm pt-4 border-t border-border">
                     Watch the 4-minute walkthrough{" "}
                     <span className="underline">here</span>, read the full
                     changelog <span className="underline">here</span>, or just
                     upgrade and ship.
                   </p>
                 </div>
-                <div className="px-8 py-5 border-t border-ink/15 bg-cream/50 flex items-center justify-between">
-                  <div className="font-mono text-[10px] uppercase tracking-widish text-ink/50">
+                <div className="px-8 py-5 border-t border-border bg-surface/50 flex items-center justify-between">
+                  <div className="font-mono text-[10px] uppercase tracking-widish text-muted">
                     Sent 14 min after release · 8,420 subscribers
                   </div>
-                  <div className="font-display font-black text-ink">→</div>
+                  <div className="font-display font-black text-foreground">→</div>
                 </div>
               </div>
 
-              <div className="bg-charcoal/60 border border-line p-5 space-y-4">
-                <div className="font-mono text-[10px] uppercase tracking-widish text-paper/40">
+              <div className="bg-white border border-border p-5 space-y-4 shadow-sm">
+                <div className="font-mono text-[10px] uppercase tracking-widish text-muted">
                   Channels
                 </div>
                 {[
@@ -442,13 +412,13 @@ The full release reel (with code walkthroughs) is in the comments.`,
                 ].map((c) => (
                   <div
                     key={c.name}
-                    className="flex items-center gap-3 py-2 border-b border-line/40 last:border-0"
+                    className="flex items-center gap-3 py-2 border-b border-border/40 last:border-0"
                   >
-                    <span className="text-amber">{c.icon}</span>
-                    <span className="font-sans text-sm text-paper/80 flex-1">
+                    <span className="text-accent">{c.icon}</span>
+                    <span className="font-sans text-sm text-foreground/80 flex-1">
                       {c.name}
                     </span>
-                    <span className="font-mono text-[10px] uppercase tracking-widish text-paper/40">
+                    <span className="font-mono text-[10px] uppercase tracking-widish text-muted">
                       {c.status}
                     </span>
                   </div>

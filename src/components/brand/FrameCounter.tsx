@@ -26,16 +26,18 @@ export function FrameCounter({ className, fps = 24, prefix = "TC" }: FrameCounte
   const pad = (n: number) => String(n).padStart(2, "0");
   const blink = Math.floor(Date.now() / 500) % 2 === 0;
 
+  const blinkClass = blink ? "opacity-100" : "opacity-30";
+
   return (
     <div
-      className={`inline-flex items-center gap-2 font-mono text-[11px] tracking-widish text-amber ${className || ""}`}
+      className={`inline-flex items-center gap-2 font-mono text-[11px] tracking-widish text-accent ${className || ""}`}
     >
-      <span className="text-paper/50">{prefix}</span>
+      <span className="text-subtle">{prefix}</span>
       <span suppressHydrationWarning>
         {pad(time.h)}
-        <span className={blink ? "opacity-100" : "opacity-30"}>:</span>
+        <span className={blinkClass}>:</span>
         {pad(time.m)}
-        <span className={blink ? "opacity-100" : "opacity-30"}>:</span>
+        <span className={blinkClass}>:</span>
         {pad(time.s)}
         <span className="opacity-50">:</span>
         {pad(time.f)}
