@@ -6,24 +6,18 @@ const cases = [
     icon: Heart,
     title: "Maintainers who care about community.",
     body: "Your users run your code. They deserve to know what changed and why — without spelunking through commit history. Patchwork gives every release a story your community can actually watch.",
-    quote: "\"We went from 3 changelogs a year to 3 a week.\"",
-    cite: "Maintainer, 14k★ framework",
   },
   {
     tag: "Startup",
     icon: Rocket,
     title: "Early teams shipping fast.",
     body: "You're 4 people. You're shipping every week. Nobody has time to write release notes — but every release is a chance to grow. Patchwork turns your velocity into distribution.",
-    quote: "\"Our X following doubled in a quarter without us posting manually.\"",
-    cite: "Founder, Series A devtools",
   },
   {
     tag: "Scaling SaaS",
     icon: Building2,
     title: "Companies that can't go stale.",
     body: "When you have 50 features shipping a month, documentation rots fast. Patchwork keeps your release notes, walkthroughs, and migration guides as fresh as the code — because they're generated from the code.",
-    quote: "\"Our support tickets about 'what changed' dropped 40%.\"",
-    cite: "Head of DX, 800-person SaaS",
   },
 ];
 
@@ -64,35 +58,8 @@ export function UseCases() {
                 {c.body}
               </p>
 
-              <div className="mt-8 pt-6 border-t border-border">
-                <p className="font-display italic font-light text-foreground/90 text-lg leading-snug text-balance">
-                  {c.quote}
-                </p>
-                <p className="font-mono text-[10px] uppercase tracking-widish text-muted mt-3">
-                  — {c.cite}
-                </p>
-              </div>
             </article>
           ))}
-        </div>
-
-        {/* Logos strip */}
-        <div className="mt-20 border-t border-border pt-10">
-          <div className="font-mono text-[10px] uppercase tracking-widish text-muted mb-6 text-center">
-            Trusted by teams shipping · private beta
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
-            {["ACME", "MERIDIAN", "FORGE", "PARALLEL", "OBELISK", "HALCYON"].map(
-              (logo) => (
-                <span
-                  key={logo}
-                  className="font-display text-xl tracking-tightest text-muted hover:text-accent transition-colors"
-                >
-                  {logo}
-                </span>
-              )
-            )}
-          </div>
         </div>
       </div>
     </section>
