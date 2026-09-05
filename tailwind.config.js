@@ -45,7 +45,7 @@ export default {
         line: "#2A241E",
       },
       fontFamily: {
-        display: ['"Fraunces"', "ui-serif", "Georgia", "serif"],
+        display: ['"Times New Roman"', "ui-serif", "Georgia", "serif"],
         sans: ['"Bricolage Grotesque"', "ui-sans-serif", "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "ui-monospace", "SFMono-Regular", "monospace"],
       },

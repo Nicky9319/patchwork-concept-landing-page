@@ -36,7 +36,7 @@ export function Logo({ className, showWordmark = true, size = "md" }: LogoProps)
           x="24"
           y="32"
           textAnchor="middle"
-          fontFamily="Fraunces, serif"
+          fontFamily="Times New Roman, serif"
           fontWeight="900"
           fontSize="24"
           fill="#0B0908"

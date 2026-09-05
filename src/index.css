@@ -26,8 +26,8 @@
   }
 
   h1, h2, h3, h4 {
-    font-family: "Fraunces", ui-serif, Georgia, serif;
-    font-variation-settings: "opsz" 144, "SOFT" 50, "WONK" 0;
+    font-family: "Times New Roman", ui-serif, Georgia, serif;
+    font-variation-settings: normal;
     letter-spacing: -0.03em;
   }
 }
